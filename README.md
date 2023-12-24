@@ -1,5 +1,5 @@
 # Tridyes
 
-Tridyes - Cross-Platform GUI
+Tridyes - Cross-Platform GUI Library
 
 
