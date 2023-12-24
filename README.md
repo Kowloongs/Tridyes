@@ -1,2 +1,5 @@
 # Tridyes
-Tridyes - 
+
+Tridyes - Cross-Platform GUI
+
+
