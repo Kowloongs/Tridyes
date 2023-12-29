@@ -27,7 +27,7 @@
 // 0x0409 is US English, 0x04b0 is Unicode and 0x0000 is 7 bit ASCII. see
 // http://msdn.microsoft.com/en-us/library/aa381049(VS.85).aspx for the full
 // list of languages and charsets
-#define LANG 0x0409
+#define LANG 0x0804
 #ifdef _UNICODE
     #define CHARSET 0x4b0
     #define LANG_WITH_CHARSET "040904b0"
@@ -37,17 +37,17 @@
 #endif
 
 #ifdef WXMAKINGDLL_BASE
-    #define WXLIBDESC "base"
+    #define WXLIBDESC "Base"
 #elif defined WXMAKINGDLL_NET
-    #define WXLIBDESC "network"
+    #define WXLIBDESC "Network"
 #elif defined WXMAKINGDLL_CORE
-    #define WXLIBDESC "core"
+    #define WXLIBDESC "Core"
 #elif defined WXMAKINGDLL_ADV
-    #define WXLIBDESC "advanced"
+    #define WXLIBDESC "Advanced"
 #elif defined WXMAKINGDLL_QA
-    #define WXLIBDESC "qa"
+    #define WXLIBDESC "QA"
 #elif defined WXMAKINGDLL_HTML
-    #define WXLIBDESC "html"
+    #define WXLIBDESC "HTML"
 #elif defined WXMAKINGDLL_GL
     #define WXLIBDESC "OpenGL"
 #elif defined WXMAKINGDLL_XML
@@ -55,23 +55,23 @@
 #elif defined WXMAKINGDLL_XRC
     #define WXLIBDESC "XRC"
 #elif defined WXMAKINGDLL_AUI
-    #define WXLIBDESC "AUI"
+    #define WXLIBDESC "GUI"
 #elif defined WXMAKINGDLL_RIBBON
-    #define WXLIBDESC "ribbon"
+    #define WXLIBDESC "Ribbon"
 #elif defined WXMAKINGDLL_PROPGRID
-    #define WXLIBDESC "property grid"
+    #define WXLIBDESC "Property Grid"
 #elif defined WXMAKINGDLL_RICHTEXT
-    #define WXLIBDESC "rich text"
+    #define WXLIBDESC "Rich Text"
 #elif defined WXMAKINGDLL_MEDIA
-    #define WXLIBDESC "multimedia"
+    #define WXLIBDESC "Multi-Media"
 #elif defined WXMAKINGDLL_STC
-    #define WXLIBDESC "styled text"
+    #define WXLIBDESC "Styled Text"
 #elif defined WXMAKINGDLL_WEBVIEW
-    #define WXLIBDESC "webview"
+    #define WXLIBDESC "Web View"
 #elif defined WXMAKINGDLL
-    #define WXLIBDESC "monolithic"
+    #define WXLIBDESC "Monolithic"
 #else
-    #error "What are we building?"
+    #error "Tridyes"
 #endif
 
 1 VERSIONINFO
@@ -87,14 +87,14 @@ BEGIN
     BEGIN
         BLOCK LANG_WITH_CHARSET
         BEGIN
-            VALUE "Comments", "wxWidgets cross-platform GUI framework\0"
-            VALUE "CompanyName", "wxWidgets development team\0"
-            VALUE "FileDescription", "wxWidgets " WXLIBDESC " library\0"
+            VALUE "Comments", "Ombres Industry Empiral\0"
+            VALUE "CompanyName", L"秋水科技有限公司\0"
+            VALUE "FileDescription", "Tridyes " WXLIBDESC " Library\0"
             VALUE "FileVersion", wxVERSION_NUM_DOT_STRING "\0"
             VALUE "InternalName", wxSTRINGIZE(WXDLLNAME) "\0"
-            VALUE "LegalCopyright", L"Copyright \xa9 1992-2023 wxWidgets development team\0"
+            VALUE "LegalCopyright", L"Copyright (C) 356 - 999. Asytumn Technology Co., Ltd.\0"
             VALUE "OriginalFilename", wxSTRINGIZE(WXDLLNAME) ".dll\0"
-            VALUE "ProductName", "wxWidgets\0"
+            VALUE "ProductName", "Cygnus\0"
             VALUE "ProductVersion", wxVERSION_NUM_DOT_STRING "\0"
         END
     END
